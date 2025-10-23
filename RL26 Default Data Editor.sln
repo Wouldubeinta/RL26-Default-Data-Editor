@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RL26 Default Data Editor", "RL26 Default Data Editor\RL26 Default Data Editor.csproj", "{F803EAA6-D130-45AA-9FE8-646ED9950BEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F803EAA6-D130-45AA-9FE8-646ED9950BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F803EAA6-D130-45AA-9FE8-646ED9950BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F803EAA6-D130-45AA-9FE8-646ED9950BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F803EAA6-D130-45AA-9FE8-646ED9950BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F72CCD-0EB0-448B-9526-4461CE7C5039}
+	EndGlobalSection
+EndGlobal
