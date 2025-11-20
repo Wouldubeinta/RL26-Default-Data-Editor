@@ -1,4 +1,4 @@
-None
+---Empty---
 Brisbane Broncos (NRL)
 Canterbury-Bankstown Bulldogs (NRL)
 North Queensland Cowboys (NRL)
@@ -108,3 +108,11 @@ Maori All Stars (AS)
 Pro Team (PRO)
 Queensland Maroons (SOOW)
 New South Wales Blues (SOOW)
+GF Brisbane Broncos (NRL)
+GF Melbourne Storm (NRL)
+GF Brisbane Broncos (NRLW)
+GF Sydney Roosters (NRLW)
+Decider Queensland Maroons (SOO)
+Decider New South Wales Blues (SOO)
+Decider Queensland Maroons (SOOW)
+Decider New South Wales Blues (SOOW)

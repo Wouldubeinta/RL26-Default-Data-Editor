@@ -89,8 +89,11 @@ namespace RL26_Default_Data_Editor
 
             for (int i = 0; i < Global.teamsList.Length; i++)
             {
-                if (name.Equals(Global.teamsList[i]))
+                if (name.Equals(Global.teamsList[i])) 
+                {
                     index = i;
+                    break;
+                }     
             }
             return index;
         }
@@ -111,6 +114,7 @@ namespace RL26_Default_Data_Editor
             for (int i = 0; i < 35; i++)
             {
                 Global.leagueData.Leagues[LeagueIndex].Teams[i].IsTeamEnabled = false;
+                Global.leagueData.Leagues[LeagueIndex].Teams[i].TeamId = 0;
 
                 int id = GetTeamIndex(leagueTeams_dataGridView.Rows[i].Cells[1].Value.ToString());
 

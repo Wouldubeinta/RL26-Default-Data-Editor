@@ -72,7 +72,7 @@
 
         public static void DeleteLeague(int removeIndex)
         {
-            LeagueData.LeaguesEntries[] leagues = new LeagueData.LeaguesEntries[20];
+            LeagueData.LeaguesEntries[] leagues = new LeagueData.LeaguesEntries[40];
             int LeagueCount = Global.leagueData.LeagueCount - 1;
 
             for (int i = 0, j = 0; i < LeagueCount; i++, j++)

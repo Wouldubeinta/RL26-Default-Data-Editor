@@ -152,7 +152,7 @@
             changelog_richTextBox.ReadOnly = true;
             changelog_richTextBox.Size = new Size(587, 242);
             changelog_richTextBox.TabIndex = 0;
-            changelog_richTextBox.Text = "-1.0.0.3-\n* Initial Release";
+            changelog_richTextBox.Text = "-1.0.0.4-\n* Updated default data files to game update v1.0.3326\n* Increased added leagues amount to 40.\n* Added team id's to team list.\n* Updated team list.\n\n-1.0.0.3-\n* Initial Release";
             changelog_richTextBox.WordWrap = false;
             // 
             // title_pictureBox

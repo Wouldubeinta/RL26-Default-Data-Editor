@@ -40,10 +40,22 @@ namespace RL26_Default_Data_Editor
                 dt = new DataTable();
                 Imagelist = BitmapImage.LeagueLogos();
 
-                string logoTxt = Global.currentPath + @"\data\TeamList.txt";
+                string teamTxt = Global.currentPath + @"\data\TeamList.txt";
 
-                if (File.Exists(logoTxt))
-                    Global.teamsList = File.ReadAllLines(logoTxt);
+                if (!File.Exists(teamTxt))
+                    return;
+
+                string[] teams = File.ReadAllLines(teamTxt);
+
+                Global.teamsList = new string[teams.Length];
+
+                for (int i = 0; i < teams.Length; i++) 
+                {
+                    if (i == 0)
+                        Global.teamsList[i] = teams[i];
+                    else
+                        Global.teamsList[i] = "[" + i.ToString() + "] - " + teams[i];
+                }
 
                 dt.Columns.Add("Index", typeof(int));
                 dt.Columns.Add("ID", typeof(int));
@@ -111,7 +123,7 @@ namespace RL26_Default_Data_Editor
 
         private void addNewLeague(bool Gender)
         {
-            if (Global.leagueData.LeagueCount != 20)
+            if (Global.leagueData.LeagueCount != 40)
             {
                 AddRemove.AddLeague(Gender);
                 UI.Update_LeagueList(leagues_dataGridView);
