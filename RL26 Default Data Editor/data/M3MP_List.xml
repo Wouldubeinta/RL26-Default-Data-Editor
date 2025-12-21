@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ExtractFileInfo Index="37252" IsCompressed="false">
+<ExtractFileInfo Index="37414" IsCompressed="false">
   <Entries>
     <Entry FilePath="defaultdata/000001.clubdata" />
     <Entry FilePath="defaultdata/000001.playerdata" />
@@ -219,13 +219,21 @@
     <Entry FilePath="defaultdata/000108.playerdata" />
     <Entry FilePath="defaultdata/000109.clubdata" />
     <Entry FilePath="defaultdata/000109.playerdata" />
+    <Entry FilePath="defaultdata/000110.clubdata" />
     <Entry FilePath="defaultdata/000110.playerdata" />
+    <Entry FilePath="defaultdata/000111.clubdata" />
     <Entry FilePath="defaultdata/000111.playerdata" />
+    <Entry FilePath="defaultdata/000112.clubdata" />
     <Entry FilePath="defaultdata/000112.playerdata" />
+    <Entry FilePath="defaultdata/000113.clubdata" />
     <Entry FilePath="defaultdata/000113.playerdata" />
+    <Entry FilePath="defaultdata/000114.clubdata" />
     <Entry FilePath="defaultdata/000114.playerdata" />
+    <Entry FilePath="defaultdata/000115.clubdata" />
     <Entry FilePath="defaultdata/000115.playerdata" />
+    <Entry FilePath="defaultdata/000116.clubdata" />
     <Entry FilePath="defaultdata/000116.playerdata" />
+    <Entry FilePath="defaultdata/000117.clubdata" />
     <Entry FilePath="defaultdata/000117.playerdata" />
     <Entry FilePath="defaultdata/000118.playerdata" />
     <Entry FilePath="defaultdata/000119.playerdata" />
@@ -3442,6 +3450,8 @@
     <Entry FilePath="defaultdata/003260.playerdata" />
     <Entry FilePath="defaultdata/003261.playerdata" />
     <Entry FilePath="defaultdata/003262.playerdata" />
+    <Entry FilePath="defaultdata/003263.playerdata" />
+    <Entry FilePath="defaultdata/003264.playerdata" />
     <Entry FilePath="defaultdata/attr_bmi_limits" />
     <Entry FilePath="defaultdata/civilian01_female.clubdata" />
     <Entry FilePath="defaultdata/civilian01_male.clubdata" />
