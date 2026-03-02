@@ -94,7 +94,7 @@ namespace RL26_Default_Data_Editor
             HeaderData = input.ReadBytes(668);
             LeagueCount = input.ReadInt32();
 
-            Leagues = new LeaguesEntries[20];
+            Leagues = new LeaguesEntries[40];
 
             for (int i = 0; i < LeagueCount; i++)
             {

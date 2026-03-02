@@ -118,7 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="changelog_richTextBox.Text" xml:space="preserve">
-    <value>-1.0.0.5-
+    <value>-1.0.1.6-
+* Fixed league amount.
+* Updated default data files to game update v1.0.3860
+
+-1.0.0.5-
 * Updated default data files to game update v1.0.3539
 
 -1.0.0.4-

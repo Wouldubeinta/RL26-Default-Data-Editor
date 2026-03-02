@@ -12,9 +12,10 @@ namespace RL26_Default_Data_Editor
             InitializeComponent();
         }
 
-        private LeagueData.LeaguesEntries? _league = new();
+        private LeagueData.LeaguesEntries? _league = null;
         private BackgroundWorker? M3MP_Create_bgw = null;
 
+        [DefaultValue(typeof(LeagueData.LeaguesEntries), null)]
         public LeagueData.LeaguesEntries? league
         {
             get { return _league; }
