@@ -55,6 +55,8 @@ namespace RL26_Default_Data_Editor
             public bool IsFrontend = true;
             public bool IsWorldCupLeagueEnabled = true;
             public bool IsWorldCupLeague = false;
+            public bool IsSortIndexEnabled = true;
+            public int SortIndex = 0;
             public TeamsEntries[]? Teams = null;
         }
 
@@ -91,7 +93,7 @@ namespace RL26_Default_Data_Editor
         /// <param name="input">defaultdata_leagues input stream</param>
         public void Deserialize(Reader input)
         {
-            HeaderData = input.ReadBytes(668);
+            HeaderData = input.ReadBytes(690);
             LeagueCount = input.ReadInt32();
 
             Leagues = new LeaguesEntries[40];
@@ -114,6 +116,8 @@ namespace RL26_Default_Data_Editor
                 Leagues[i].IsFrontend = input.ReadBoolean();
                 Leagues[i].IsWorldCupLeagueEnabled = input.ReadBoolean();
                 Leagues[i].IsWorldCupLeague = input.ReadBoolean();
+                Leagues[i].IsSortIndexEnabled = input.ReadBoolean();
+                Leagues[i].SortIndex = input.ReadInt32();
 
                 Leagues[i].Teams = new TeamsEntries[35];
 
@@ -157,18 +161,20 @@ namespace RL26_Default_Data_Editor
                         output.WriteUInt8(Leagues[i].ShortNameSize);
                         output.WriteString(Leagues[i].ShortName);
                         output.WriteBool(Leagues[i].IsGenderEnabled);
-                        output.WriteInt32(Leagues[i].Gender);
+                        output.WriteInt32(Leagues[i].Gender, Endian.Little);
                         output.WriteBool(Leagues[i].IsFrontEndEnabled);
                         output.WriteBool(Leagues[i].IsFrontend);
                         output.WriteBool(Leagues[i].IsWorldCupLeagueEnabled);
                         output.WriteBool(Leagues[i].IsWorldCupLeague);
+                        output.WriteBool(Leagues[i].IsSortIndexEnabled);
+                        output.WriteInt32(Leagues[i].SortIndex, Endian.Little);
 
                         for (int j = 0; j < 35; j++)
                         {
                             output.WriteBool(Leagues[i].Teams[j].IsTeamEnabled);
 
                             if (Leagues[i].Teams[j].IsTeamEnabled)
-                                output.WriteInt32(Leagues[i].Teams[j].TeamId);
+                                output.WriteInt32(Leagues[i].Teams[j].TeamId, Endian.Little);
                         }
                     }
                 }

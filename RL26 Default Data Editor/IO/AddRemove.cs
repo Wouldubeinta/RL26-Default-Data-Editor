@@ -35,6 +35,8 @@
             league.IsIdEnabled = true;
             league.Id = Global.leagueData.Leagues[Global.leagueData.LeagueCount - 1].Id + 1;
             league.IsNameEnabled = true;
+            league.IsSortIndexEnabled = true;
+            league.SortIndex = league.Id;
 
             string sex = "(M)";
 

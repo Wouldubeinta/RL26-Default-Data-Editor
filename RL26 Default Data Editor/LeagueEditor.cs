@@ -27,6 +27,7 @@ namespace RL26_Default_Data_Editor
                 leagueTitle_label.Text = Global.leagueData.Leagues[LeagueIndex].Name;
                 leagueShortName_textBox.Text = Global.leagueData.Leagues[LeagueIndex].ShortName;
                 leagueGender_comboBox.SelectedIndex = Global.leagueData.Leagues[LeagueIndex].Gender;
+                leagueSortIndex_numericUpDown.Value = Global.leagueData.Leagues[LeagueIndex].SortIndex;
                 Bitmap logo = BitmapImage.GetLeagueLogo(LeagueIndex);
                 leagueTitle_pictureBox.Image = logo;
                 league_pictureBox.Image = logo;
@@ -110,6 +111,7 @@ namespace RL26_Default_Data_Editor
             Global.leagueData.Leagues[LeagueIndex].ShortName = leagueShortName_textBox.Text;
             Global.leagueData.Leagues[LeagueIndex].ShortNameSize = Convert.ToByte(leagueShortName_textBox.Text.Length);
             Global.leagueData.Leagues[LeagueIndex].Gender = leagueGender_comboBox.SelectedIndex;
+            Global.leagueData.Leagues[LeagueIndex].SortIndex = Convert.ToInt32(leagueSortIndex_numericUpDown.Value);
 
             for (int i = 0; i < 35; i++)
             {

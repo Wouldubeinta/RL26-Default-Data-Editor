@@ -60,6 +60,7 @@ namespace RL26_Default_Data_Editor
 
                 dt.Columns.Add("Index", typeof(int));
                 dt.Columns.Add("ID", typeof(int));
+                dt.Columns.Add("Sort Index", typeof(int));
                 dt.Columns.Add("Logo", typeof(Image));
                 dt.Columns.Add("Name", typeof(string));
                 dt.Columns.Add("Short Name", typeof(string));
@@ -77,6 +78,7 @@ namespace RL26_Default_Data_Editor
                     dt.Rows.Add();
                     dt.Rows[dt.Rows.Count - 1]["Index"] = i;
                     dt.Rows[dt.Rows.Count - 1]["ID"] = Global.leagueData.Leagues[i].Id;
+                    dt.Rows[dt.Rows.Count - 1]["Sort Index"] = Global.leagueData.Leagues[i].SortIndex;
                     dt.Rows[dt.Rows.Count - 1]["Logo"] = Imagelist[i];
                     dt.Rows[dt.Rows.Count - 1]["Name"] = Global.leagueData.Leagues[i].Name;
                     dt.Rows[dt.Rows.Count - 1]["Short Name"] = Global.leagueData.Leagues[i].ShortName;
@@ -175,6 +177,7 @@ namespace RL26_Default_Data_Editor
             league.Gender = Global.leagueData.Leagues[Global.leagueIndex].Gender;
             league.IsFrontend = Global.leagueData.Leagues[Global.leagueIndex].IsFrontend;
             league.IsWorldCupLeague = Global.leagueData.Leagues[Global.leagueIndex].IsWorldCupLeague;
+            league.SortIndex = Global.leagueData.Leagues[Global.leagueIndex].SortIndex;
 
             league.Teams = new LeagueData.TeamsEntries[35];
 
@@ -201,6 +204,7 @@ namespace RL26_Default_Data_Editor
                 Global.leagueData.Leagues[Global.leagueIndex].Gender = league.Gender;
                 Global.leagueData.Leagues[Global.leagueIndex].IsFrontend = league.IsFrontend;
                 Global.leagueData.Leagues[Global.leagueIndex].IsWorldCupLeague = league.IsWorldCupLeague;
+                Global.leagueData.Leagues[Global.leagueIndex].SortIndex = league.SortIndex;
 
                 for (int i = 0; i < 35; i++)
                 {

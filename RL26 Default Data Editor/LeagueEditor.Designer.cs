@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LeagueEditor));
             tabControl1 = new TabControl();
             info_tabPage = new TabPage();
+            leagueSortIndex_numericUpDown = new NumericUpDown();
+            leagueSortIndex_label = new Label();
             leagueIndex_textBox = new TextBox();
             leagueIndex_label = new Label();
             leagueIsWorldCup_checkBox = new CheckBox();
@@ -51,6 +53,7 @@
             leagueSaveChangers_button = new Button();
             tabControl1.SuspendLayout();
             info_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)leagueSortIndex_numericUpDown).BeginInit();
             ((System.ComponentModel.ISupportInitialize)league_pictureBox).BeginInit();
             teams_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)leagueTeams_dataGridView).BeginInit();
@@ -69,6 +72,8 @@
             // 
             // info_tabPage
             // 
+            info_tabPage.Controls.Add(leagueSortIndex_numericUpDown);
+            info_tabPage.Controls.Add(leagueSortIndex_label);
             info_tabPage.Controls.Add(leagueIndex_textBox);
             info_tabPage.Controls.Add(leagueIndex_label);
             info_tabPage.Controls.Add(leagueIsWorldCup_checkBox);
@@ -89,6 +94,25 @@
             info_tabPage.TabIndex = 0;
             info_tabPage.Text = "Info";
             info_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // leagueSortIndex_numericUpDown
+            // 
+            leagueSortIndex_numericUpDown.Location = new Point(98, 196);
+            leagueSortIndex_numericUpDown.Maximum = new decimal(new int[] { 40, 0, 0, 0 });
+            leagueSortIndex_numericUpDown.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            leagueSortIndex_numericUpDown.Name = "leagueSortIndex_numericUpDown";
+            leagueSortIndex_numericUpDown.Size = new Size(91, 23);
+            leagueSortIndex_numericUpDown.TabIndex = 15;
+            leagueSortIndex_numericUpDown.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // leagueSortIndex_label
+            // 
+            leagueSortIndex_label.AutoSize = true;
+            leagueSortIndex_label.Location = new Point(33, 200);
+            leagueSortIndex_label.Name = "leagueSortIndex_label";
+            leagueSortIndex_label.Size = new Size(62, 15);
+            leagueSortIndex_label.TabIndex = 14;
+            leagueSortIndex_label.Text = "Sort Index:";
             // 
             // leagueIndex_textBox
             // 
@@ -273,6 +297,7 @@
             tabControl1.ResumeLayout(false);
             info_tabPage.ResumeLayout(false);
             info_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)leagueSortIndex_numericUpDown).EndInit();
             ((System.ComponentModel.ISupportInitialize)league_pictureBox).EndInit();
             teams_tabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)leagueTeams_dataGridView).EndInit();
@@ -302,5 +327,7 @@
         private TextBox leagueIndex_textBox;
         private Label leagueIndex_label;
         private Button leagueSaveChangers_button;
+        private NumericUpDown leagueSortIndex_numericUpDown;
+        private Label leagueSortIndex_label;
     }
 }

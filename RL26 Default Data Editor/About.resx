@@ -117,23 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="changelog_richTextBox.Text" xml:space="preserve">
-    <value>-1.0.1.6-
-* Fixed league amount.
-* Updated default data files to game update v1.0.3860
-
--1.0.0.5-
-* Updated default data files to game update v1.0.3539
-
--1.0.0.4-
-* Updated default data files to game update v1.0.3326
-* Increased added leagues amount to 40.
-* Added team id's to team list.
-* Updated team list.
-
--1.0.0.3-
-* Initial Release</value>
-  </data>
   <data name="credits_richTextBox.Text" xml:space="preserve">
     <value>*** Special Thanks To ***
 
@@ -253,6 +236,27 @@ THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
 IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 17. Interpretation of Sections 15 and 16.
 If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.</value>
+  </data>
+  <data name="changelog_richTextBox.Text" xml:space="preserve">
+    <value>-1.0.1.7-
+* Added Sort Index to a league, which was added with game update v1.0.3968.
+* Updated default data files to game update v1.0.3968.
+
+-1.0.1.6-
+* Fixed league amount.
+* Updated default data files to game update v1.0.3860.
+
+-1.0.0.5-
+* Updated default data files to game update v1.0.3539.
+
+-1.0.0.4-
+* Updated default data files to game update v1.0.3326.
+* Increased added leagues amount to 40.
+* Added team id's to team list.
+* Updated team list.
+
+-1.0.0.3-
+* Initial Release.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
