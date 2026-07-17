@@ -174,6 +174,8 @@ namespace RL26_Default_Data_Editor
                 m3mpXmlOut.MainUnCompressedSize = (int)IO.FileInfo(Global.currentPath + @"\m3mp_header.tmp") + (int)IO.FileInfo(Global.currentPath + @"\m3mp_compressed_data.tmp");
                 m3mpXmlOut.VramCompressedSize = 0;
                 m3mpXmlOut.VramUnCompressedSize = 0;
+                m3mpXmlOut.FolderHash = M3MP_Xml_In.FolderHash;
+                m3mpXmlOut.FileNameHash = M3MP_Xml_In.FileNameHash;
                 IO.XmlSerialize(Global.currentPath + @"\defaultdata.xml", m3mpXmlOut);
 
                 if (writer != null) { writer.Dispose(); writer = null; }

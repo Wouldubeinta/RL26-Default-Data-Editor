@@ -238,9 +238,13 @@ IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY C
 If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.</value>
   </data>
   <data name="changelog_richTextBox.Text" xml:space="preserve">
-    <value>-1.0.1.7-
+    <value>-1.0.1.8-
+* Added FolderHash and FileHash to the xml, so it works with the Blobset Tools update v1.1.9.45.
+* Updated default data files to v1.0.5033.
+
+-1.0.1.7-
+* Updated default data files to game update v1.0.5013.
 * Added Sort Index to a league, which was added with game update v1.0.3968.
-* Updated default data files to game update v1.0.3968.
 
 -1.0.1.6-
 * Fixed league amount.

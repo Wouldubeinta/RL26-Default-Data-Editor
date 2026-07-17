@@ -60,7 +60,7 @@
             menuStrip.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, saveOptionsToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
-            menuStrip.Size = new Size(800, 24);
+            menuStrip.Size = new Size(879, 24);
             menuStrip.TabIndex = 0;
             menuStrip.Text = "menuStrip1";
             // 
@@ -114,7 +114,7 @@
             statusStrip.Items.AddRange(new ToolStripItem[] { status_toolStripStatusLabel, progress_toolStripStatusLabel, toolStripProgressBar });
             statusStrip.Location = new Point(0, 725);
             statusStrip.Name = "statusStrip";
-            statusStrip.Size = new Size(800, 22);
+            statusStrip.Size = new Size(879, 22);
             statusStrip.TabIndex = 1;
             statusStrip.Text = "statusStrip1";
             // 
@@ -122,7 +122,7 @@
             // 
             status_toolStripStatusLabel.ForeColor = Color.DarkGreen;
             status_toolStripStatusLabel.Name = "status_toolStripStatusLabel";
-            status_toolStripStatusLabel.Size = new Size(483, 17);
+            status_toolStripStatusLabel.Size = new Size(562, 17);
             status_toolStripStatusLabel.Spring = true;
             status_toolStripStatusLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -147,7 +147,7 @@
             leagues_dataGridView.RowTemplate.ReadOnly = true;
             leagues_dataGridView.RowTemplate.Resizable = DataGridViewTriState.True;
             leagues_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            leagues_dataGridView.Size = new Size(800, 701);
+            leagues_dataGridView.Size = new Size(879, 701);
             leagues_dataGridView.TabIndex = 2;
             leagues_dataGridView.KeyDown += leagues_dataGridView_KeyDown;
             leagues_dataGridView.MouseClick += leagues_dataGridView_MouseClick;
@@ -221,7 +221,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 747);
+            ClientSize = new Size(879, 747);
             Controls.Add(leagues_dataGridView);
             Controls.Add(statusStrip);
             Controls.Add(menuStrip);
